@@ -43,7 +43,7 @@ fi
 
 if [ $mon_temp1 -ge $mon_temp1_C ]; then
   notify-send -u critical WARNING: "Temp1 at $mon_temp1" -t 10000
-  if [ ! -f /tmp/mon_temp1 ]; then
+  if [ ! -f /tmp/mon_temp1 ]; then #check if the named file does not exist; if it exists a mail was already sent in the past otherwise create the file and send the mail
     touch /tmp/mon_temp1 #only one mail is sent instead of each time the script runs and it's still critical; remove manually or with a reboot
     SendaMail Temp1
   fi
