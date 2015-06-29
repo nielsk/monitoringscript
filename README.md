@@ -1,7 +1,7 @@
 # monitoringscript
 
 A little script that you run with your crontab to get notified if your CPU gets too hot and eventually sends a mail.
-You need lm_sensors and something with which the mail-command works like msmtp.
+You need [lm_sensors](http://www.lm-sensors.org/) and something with which the mail-command works like [msmtp](http://msmtp.sourceforge.net/).
 
 Before you can run the script, you need to run once
 
