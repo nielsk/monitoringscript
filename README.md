@@ -4,10 +4,12 @@ A little script that you run with your crontab to get notified if your CPU gets 
 You need lm_sensors and something with which the mail-command works like msmtp.
 
 Before you can run the script, you need to run once
-    sudo sensors_detect
+
+`sudo sensors_detect`
 
 And after that I recommend that you run once
-    sensors
+
+`sensors`
 
 Then you can change the script to your needs.
 
